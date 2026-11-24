@@ -1,7 +1,7 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>A.M. Tech Centro Automotivo</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="A.M. Tech Centro Automotivo Porto Seguro em São Bernardo do Campo: motor, injeção, suspensão, freios, alinhamento 3D, balanceamento, vistoria e mais.">
+<meta name="description" content="A.M. Tech Centro Automotivo Porto Seguro em São Bernardo do Campo: motor, injeção, suspensão, freios, alinhamento 3D, balanceamento e mais.">
 <meta name="theme-color" content="#06122b">
 <link rel="canonical" href="https://www.amtechporto.com.br/">
 <meta property="og:type" content="website">
@@ -179,6 +179,14 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
 .card.feature p{color:#b4c4e8}
 .card.feature:hover{border-color:var(--navy-900);box-shadow:0 30px 60px -30px rgba(8,26,64,.8)}
 .card.feature::after{background:var(--sky)}
+.card.feature .px-body{flex:1;min-width:0}
+.px{margin-top:18px;border-top:1px solid rgba(255,255,255,.14)}
+.px a{display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14);text-decoration:none;color:#fff}
+.px a b{font:600 1rem var(--f-head);letter-spacing:-.01em}
+.px a span{grid-column:1;color:#b4c4e8;font-size:.9rem;line-height:1.4}
+.px a svg{grid-row:1/3;grid-column:2;font-size:20px;color:var(--sky);transition:transform .25s}
+.px a:hover svg{transform:translateX(4px)}
+.px a:hover b{color:var(--sky)}
 .svc-foot{margin-top:40px;display:flex;justify-content:flex-start}
 @media(max-width:980px){.svc{grid-template-columns:repeat(2,1fr)}.card.feature{grid-column:1/-1}}
 @media(max-width:640px){.svc{grid-template-columns:1fr}.card.feature{flex-direction:column;align-items:flex-start;gap:14px;padding:28px}}
@@ -355,7 +363,12 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
       <article class="card rv"><div class="ico"><svg class="i"><use href="#i-temp"/></svg></div><h3>Arrefecimento</h3><p>Cuidado com o sistema de arrefecimento para evitar superaquecimento.</p></article>
       <article class="card rv d1"><div class="ico"><svg class="i"><use href="#i-pipe"/></svg></div><h3>Escapamentos</h3><p>Reparo e substituição do sistema de escapamento.</p></article>
       <article class="card rv d2"><div class="ico"><svg class="i"><use href="#i-glass"/></svg></div><h3>Cristalização</h3><p>Cristalização de para-brisa e vigia traseiro.</p></article>
-      <article class="card feature rv"><div class="ico"><svg class="i"><use href="#i-shield"/></svg></div><div><h3>Serviços exclusivos Porto Seguro</h3><p style="margin-top:8px">Vistoria prévia, vistoria de lanterna e retrovisor, e rastreadores (instalação, retirada e reparo).</p></div></article>
+      <article class="card feature rv"><div class="ico"><svg class="i"><use href="#i-shield"/></svg></div><div class="px-body"><h3>Serviços exclusivos Porto Seguro</h3>
+        <div class="px">
+          <a data-wa="Olá! Gostaria de informações sobre a revisão de luzes na A.M. Tech." href="https://wa.me/5511940114244" target="_blank" rel="noopener"><b>Revisão de luzes</b><span>Revisão do sistema de iluminação do veículo.</span><svg class="i"><use href="#i-arrow"/></svg></a>
+          <a data-wa="Olá! Gostaria de informações sobre cristalização na A.M. Tech." href="https://wa.me/5511940114244" target="_blank" rel="noopener"><b>Cristalização</b><span>Cristalização de para-brisa e vigia traseiro.</span><svg class="i"><use href="#i-arrow"/></svg></a>
+          <a data-wa="Olá! Gostaria de informações sobre reparo de pneus na A.M. Tech." href="https://wa.me/5511940114244" target="_blank" rel="noopener"><b>Reparo de pneus</b><span>Reparo de pneus para voltar a rodar com segurança.</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        </div></div></article>
       <article class="card rv d1"><div class="ico"><svg class="i"><use href="#i-bolt"/></svg></div><h3>Carros elétricos</h3><p>Local de abastecimento para carros elétricos.</p></article>
     </div>
     <div class="svc-foot rv"><a class="tlink" data-wa="Olá! Gostaria de um orçamento na A.M. Tech." href="https://wa.me/5511940114244" target="_blank" rel="noopener">Falar sobre um serviço no WhatsApp <svg class="i"><use href="#i-arrow"/></svg></a></div>
@@ -465,7 +478,7 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
         <div class="field"><label for="f-veic">Veículo</label><input id="f-veic" name="veiculo" required placeholder="Modelo e ano"></div>
         <div class="field"><label for="f-serv">Serviço</label>
           <select id="f-serv" name="servico" required>
-            <option value="">Selecione</option><option>Motor</option><option>Injeção eletrônica</option><option>Suspensão</option><option>Freios</option><option>Alinhamento e balanceamento</option><option>Filtros e correias</option><option>Arrefecimento</option><option>Escapamentos</option><option>Cristalização</option><option>Vistoria / rastreador</option><option>Outro</option>
+            <option value="">Selecione</option><option>Motor</option><option>Injeção eletrônica</option><option>Suspensão</option><option>Freios</option><option>Alinhamento e balanceamento</option><option>Filtros e correias</option><option>Arrefecimento</option><option>Escapamentos</option><option>Cristalização</option><option>Revisão de luzes</option><option>Reparo de pneus</option><option>Outro</option>
           </select></div>
       </div>
       <div class="field"><label for="f-msg">Mensagem (opcional)</label><textarea id="f-msg" name="msg" placeholder="Conte o que está acontecendo com o carro"></textarea></div>
